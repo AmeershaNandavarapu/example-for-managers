@@ -1,4 +1,4 @@
-import { USER_NAME, PASS_WORD } from "./actions";
+import { USER_NAME, PASS_WORD ,LOGI_IN} from "./actions";
 
 
 const initialState={
@@ -8,7 +8,7 @@ const initialState={
 }
 
 
-const reducers=(state=initialState,action)=>{
+const reducers=(state=initialState ,action)=>{
     switch (action.type) {
         case USER_NAME:
             return{
@@ -20,6 +20,11 @@ const reducers=(state=initialState,action)=>{
                 ...state,
                 password: action.payload
             }
+        case LOGI_IN:
+            return{
+                ...state,
+                isLoggedIn:true
+            }    
     
         default:
             return state;

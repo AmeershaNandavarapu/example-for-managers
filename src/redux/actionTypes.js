@@ -1,4 +1,4 @@
-import {USER_NAME,PASS_WORD} from './actions'
+import {USER_NAME,PASS_WORD,LOGI_IN} from './actions'
 
 export function userNameChange(value){
     return{
@@ -11,5 +11,11 @@ export function passwordChange(value){
     return{
         type:PASS_WORD,
         payload:value
+    }
+}
+
+export function loggedIn(){
+    return{
+        type:LOGI_IN
     }
 }
