@@ -8,17 +8,17 @@ const initialState={
 }
 
 
-const reducer=(state,action)=>{
+const reducers=(state=initialState,action)=>{
     switch (action.type) {
         case USER_NAME:
             return{
                 ...state,
-                username:state.username + action.payload
+                username: action.payload
             }
         case PASS_WORD:
             return{
                 ...state,
-                password:state.password+ action.payload
+                password: action.payload
             }
     
         default:
@@ -26,4 +26,4 @@ const reducer=(state,action)=>{
     }
 }
 
-export default reducer
+export default reducers
