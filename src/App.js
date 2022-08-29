@@ -1,11 +1,12 @@
 import React from 'react';
+import LoginForm from './components/LoginForm/index'
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Ameer</h1>
+      <LoginForm/>
     </div>
   );
 }
