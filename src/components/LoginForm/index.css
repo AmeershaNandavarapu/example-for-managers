@@ -3,5 +3,22 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
+
+}
+.inputc{
+    margin: 12px;
+    height: 32px;
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+button{
+    background-color: cadetblue;
+    color: #ffffff;
+    height: 32px;
+    width: 82px;
+    border-width: 0px;
+    font-family: 'Roboto';
+    font-size: 16px;
 
 }
