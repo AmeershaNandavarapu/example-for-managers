@@ -1,4 +1,5 @@
 import React from 'react'
+import './index.css'
 import {useSelector,useDispatch} from 'react-redux'
 import {userNameChange,passwordChange} from '../../redux/actionTypes'
 function LoginForm(){
@@ -7,7 +8,7 @@ function LoginForm(){
     return(
         <div>
             <h1>Login form</h1>
-            <div>
+            <div className="form">
                 <input type="text" placeholder="Username" value={username} onChange={(event)=>dispatch(userNameChange(event.target.value))}/>
                 <input type="password" placeholder="Password" value={password} onChange={(event)=>dispatch(passwordChange(event.target.value))}/>
                 <button>Login</button>
